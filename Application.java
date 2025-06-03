@@ -11,6 +11,7 @@ public class Animal {
     protected void makeSound() {
         System.out.println("Some generic animal sound");
     }
+
     #feature2 by ethan on oct 2024 on reports module
     // File: MyClass.java
 
@@ -36,7 +37,23 @@ public class MyClass {
         // Calling the public method
         myObject.publicMethod();
     }
+
+    #feature1 changes by vivek on oct 2024 for services module
+// File: Dog.java
+
+// A subclass of Animal
+public class Dog extends Animal {
+
+    // Public method to access protected members
+    public void displayInfo() {
+        // Accessing the protected field from the superclass
+        System.out.println("Species: " + species);
+
+        // Calling the protected method from the superclass
+        makeSound();
+    }
 }
-#end of feature2
+#end of feature1 code
+}
 
 }
